@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Remix.fun</title>
 <meta name="description" content="Launch any Solana memecoin as a remix of another. Every coin's lineage is recorded on-chain.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="logo.png">
+<meta property="og:title" content="Remix.fun">
+<meta property="og:description" content="Launch Solana coins as remixes of BONK, WIF, POPCAT and more. Every family tree is on-chain.">
+<meta property="og:image" content="https://smuffinz99-prog.github.io/remixfun/og.png">
+<meta property="og:url" content="https://smuffinz99-prog.github.io/remixfun/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://smuffinz99-prog.github.io/remixfun/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.98.4/lib/index.iife.min.js"></script>
@@ -29,9 +37,8 @@ button{font:inherit;cursor:pointer;border:none;color:inherit;background:none}
 
 nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:18px;border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:center;gap:10px;font:800 21px var(--display);letter-spacing:-.5px}
-.logo-mark{width:30px;height:30px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
-.logo-mark svg{width:18px;height:18px}
-.wordmark em{font-style:normal;color:var(--accent)}
+.logo-mark{width:32px;height:32px;display:block}
+.wordmark em{font-style:normal;background:linear-gradient(90deg,#ff4fd8,#ff8a3d 55%,#ffe14d);-webkit-background-clip:text;background-clip:text;color:transparent}
 .nav-r{display:flex;align-items:center;gap:10px}
 .net{font-size:11px;color:var(--dim);border:1px solid var(--line);padding:5px 9px;border-radius:99px;display:flex;align-items:center;gap:6px}
 .net i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
@@ -153,7 +160,7 @@ footer .mono{font-size:11px}
 <body>
 <div class="wrap">
   <nav>
-    <a class="logo" href="./"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#04210f" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="5" r="2.4"/><circle cx="5.5" cy="18.5" r="2.4"/><circle cx="18.5" cy="18.5" r="2.4"/><path d="M12 7.5v4M12 11.5 6.5 16M12 11.5l5.5 4.5"/></svg></span><span class="wordmark">remix<em>.fun</em></span></a>
+    <a class="logo" href="./"><img class="logo-mark" src="logo.svg" alt=""><span class="wordmark">remix<em>.fun</em></span></a>
     <div class="nav-r">
       <span class="net mono" id="net"><i></i>solana</span>
       <button class="btn btn-line mono" id="wallet-btn" onclick="connectWallet()">Connect wallet</button>
